@@ -57,7 +57,7 @@
 
     const scene = new THREE.Scene();
     // Wolfenstein used a very wide FOV
-    const camera = new THREE.PerspectiveCamera(75, gameWidth / gameHeight, 0.1, 100);
+    const camera = new THREE.PerspectiveCamera(75, gameWidth / gameHeight, 0.01, 100);
     camera.rotation.order = 'YXZ';
 
     // 1. HUD Scene & Orthographic Camera (Perfect for 2D)
