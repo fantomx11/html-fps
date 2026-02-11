@@ -139,6 +139,7 @@
     else wallImg.onload = () => { wallTexture.needsUpdate = true; };
 
     wallTexture.magFilter = THREE.NearestFilter;
+    wallTexture.minFilter = THREE.NearestFilter;
 
     const wallMat = new THREE.MeshLambertMaterial({ map: wallTexture });
 
